@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="10sp"
+    tools:context=".activity.EncryptActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/encrypt_btn_send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/encrypt_layout_sms"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="start|top"
+                android:textColorHint="@color/colorAccent"
+                app:hintAnimationEnabled="true"
+                app:layout_constraintEnd_toEndOf="@+id/encrypt_tab_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/encrypt_layout_sign">
+
+                <EditText
+                    android:id="@+id/encrypt_txt_sms"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_rounded_corners"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:includeFontPadding="false"
+                    android:inputType="textMultiLine"
+                    android:maxLines="5"
+                    android:minLines="10"
+                    android:textColor="@color/colorPrimaryDark" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/encrypt_layout_receiver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="RECEIVER"
+                android:importantForAutofill="no"
+                android:textColorHint="@color/colorAccent"
+                app:hintAnimationEnabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/encrypt_txt_receiver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorAccent" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/encrypt_layout_key"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="ENCRYPTION KEY"
+                android:textColorHint="@color/colorAccent"
+                app:hintAnimationEnabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/encrypt_layout_receiver">
+
+                <EditText
+                    android:id="@+id/encrypt_txt_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorAccent" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/encrypt_layout_sign"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="SIGNATURE KEY"
+                android:textColorHint="@color/colorAccent"
+                app:hintAnimationEnabled="true"
+                app:hintTextColor="@color/colorAccent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/encrypt_layout_key">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/encrypt_txt_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/encrypt_tab_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/encrypt_layout_sms"
+                app:tabGravity="fill"
+                app:tabTextColor="@color/colorAccent" />
+
+            <FrameLayout
+                android:id="@+id/encrypt_frame_layout"
+                android:layout_width="0dp"
+                android:layout_height="400sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/encrypt_tab_layout">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/encrypt_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill"
+                    android:background="@color/colorPrimaryDark"
+                    android:foregroundGravity="fill" />
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/encrypt_btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_send_24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

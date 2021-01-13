@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">CRYPTEXT</string>
+    <string name="EXAMPLE_EMAIL">example@email.com</string>
+    <string name="PASSWORD">password</string>
+    <string name="ALIAS">alias</string>
+    <string name="SIGNUP">signup</string>
+    <string name="HOME_WELCOME">WELCOME TO\nCRYPTEXT</string>
+    <string name="HOME_REGISTER">NEED AN ACCOUNT</string>
+    <string name="HOME_LOGIN">ALREADY HAVE ACCOUNT</string>
+    <string name="LOGIN_BTN">LOGIN</string>
+    <string name="LOGIN_EMAIL">email</string>
+    <string name="LOGIN_PASSWORD">password</string>
+    <string name="LOGIN_LABEL">LOGIN TO YOUR ACCOUNT</string>
+    <string name="REGISTER_BTN">REGISTER</string>
+    <string name="REG_ALIAS">alias</string>
+    <string name="REG_CONFIRM">confirm</string>
+    <string name="REG_LABEL" >CREATE A NEW ACCOUNT</string>
+    <string name="PROFILE_LOGOUT">LOGOUT</string>
+    <string name="PROFILE_DELETE">DELETE ACCOUT</string>
+    <string name="REGISTER">REGISTER</string>
+    <string name="DECRYPT_KEY">DECRYPTION KEY</string>
+    <string name="ID">ID</string>
+    <string name="ADD_CONTACT">ADD CONTACT</string>
+    <string name="GET_PUBLIC_KEY">GET PUBLIC KEY</string>
+    <string name="VARIFIFY">VERIFY SIGNATURE</string>
+</resources>

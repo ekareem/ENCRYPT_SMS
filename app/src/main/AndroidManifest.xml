@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dogne.sms4">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".notification.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ContactActivity"
+            android:theme="@style/AppTheme.popUp" />
+        <activity
+            android:name=".activity.EncryptActivity" />
+        <activity
+            android:name=".activity.DecryptActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.AddContactActivity"
+            android:theme="@style/AppTheme.popUp" />
+        <activity android:name=".activity.ProfileActivity" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+        <receiver android:name=".notification.NotificationReceiver"/>
+    </application>
+
+</manifest>

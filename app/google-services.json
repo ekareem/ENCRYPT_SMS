@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "119611152949",
+    "firebase_url": "https://sms4-4c66d.firebaseio.com",
+    "project_id": "sms4-4c66d",
+    "storage_bucket": "sms4-4c66d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119611152949:android:1c083acb4c1a6d1ecc6f7c",
+        "android_client_info": {
+          "package_name": "com.dogne.sms4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119611152949-qd21ki4e0c6beaj2lb625150aab7c4a9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dogne.sms4",
+            "certificate_hash": "ae467bafc50342f1d873fc7b8f1e308d4baec8f2"
+          }
+        },
+        {
+          "client_id": "119611152949-smbe0mfim507phksqecbnqn3bh70ljiq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFfkhcHvq5Bno1_oP8l1LQFOzI9kfm-Jw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119611152949-smbe0mfim507phksqecbnqn3bh70ljiq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
